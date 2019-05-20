@@ -16,7 +16,7 @@ class K_Array (capacity: Int = 10){
         return size==0
     }
 
-   
+
 
 
 
