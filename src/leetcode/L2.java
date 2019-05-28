@@ -32,7 +32,7 @@ public class L2 {
             carry = sum / 10;
             System.out.println("carry: " + carry);
             curr.next = new ListNode(sum % 10);
-            
+
             curr = curr.next;
             if (p != null) p = p.next;
             if (q != null) q = q.next;
