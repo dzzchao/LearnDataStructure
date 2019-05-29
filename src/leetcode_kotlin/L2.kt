@@ -25,7 +25,7 @@ class L2 {
             carry = sum / 10
             print("carry:$carry")
             curr.next = ListNode(sum%10)
-            //TODO 咋解决？
+
             curr = curr.next!!
             if(p != null) {
                 p = p.next
@@ -36,8 +36,9 @@ class L2 {
 
             println("while ")
         }
-
-
+        if (carry > 0) {
+            curr.next = ListNode(carry)
+        }
         return dummyHead.next
     }
 
@@ -53,9 +54,10 @@ fun main(args: Array<String>) {
 
     val l2 = L2()
     var listNode = l2.addTwoNumbers(listNode1, listNode2)
+    println("结果：")
     while (listNode != null) {
         print(listNode.value)
-        listNode = listNode.next!!
+        listNode = listNode.next
     }
 
 
