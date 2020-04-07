@@ -7,11 +7,6 @@ package imooc_liuyubo.A_02_Array;
  */
 public class Array<E> {
 
-    /********测试 ********/
-
-
-    /********测试 ********/
-
     private E[] data;
     private int size;
 
